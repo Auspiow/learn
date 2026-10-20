@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Auspiow's learning resources">
+  <link rel="icon" type="image/svg+xml" href="./favicon.ico">
+  <title>Learn</title>
+
+  <style>
+    :root {
+      --ink: #09111e;
+      --muted: #2e67b7;
+      --accent: #131393;
+      --border: #e2e7ed;
+      --bg: #fff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Noto Sans SC", sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      border: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 88px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 0;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .brand:hover img {
+      opacity: 0.8;
+    }
+
+    /* Courses */
+    .courses {
+      padding-top: 52px;
+      padding-bottom: 100px;
+    }
+
+    .course-card {
+      display: block;
+      padding: 28px 30px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--ink);
+      transition: border-color .2s, transform .2s;
+    }
+
+    .course-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .course-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+    }
+
+    .course-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .course-card .arrow {
+      display: block;
+      margin-top: 18px;
+      color: var(--accent);
+      font-size: .9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+      .container {
+        padding: 0 18px;
+      }
+
+      nav {
+        align-items: flex-start;
+        padding: 16px 0;
+      }
+
+      .courses {
+        padding-top: 40px;
+      }
+
+      .course-card {
+        padding: 22px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="/" title="Auspiow Learn">
+          <img src="/assets/avatar.png" alt="Auspiow">
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Main -->
+  <main class="container">
+    <section id="courses" class="courses">
+
+      <a class="course-card" href="SkillsTutorial/">
+        <span class="tag">CS</span>
+        <h3>技能拾遗 Skills Tutorial</h3>
+        <p>
+          2026 年秋冬学期浙江大学计算机学院朋辈辅学「技能拾遗」课程
+        </p>
+        <span class="arrow">Course →</span>
+      </a>
+
+    </section>
+  </main>
+
+</body>
+</html>

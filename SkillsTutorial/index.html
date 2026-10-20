@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026 年秋冬学期计算机学院朋辈辅学「技能拾遗」课程">
+  <link rel="icon" type="image/svg+xml" href="./favicon.ico">
+  <title>2026 年秋冬学期计算机学院朋辈辅学「技能拾遗」</title>
+
+  <style>
+    :root {
+      --ink: #09111e;
+      --accent: #131393;
+      --border: #e2e7ed;
+      --soft: #f2f3f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Noto Sans SC", sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .note-box {
+      margin-top: 28px;
+      padding: 26px 28px;
+      background: var(--soft);
+      border-left: 6px solid #d7d7d7;
+      box-shadow: inset 0 0 0 1px #ececec;
+    }
+
+    .note-box p {
+      margin: 0 0 22px 0;
+      font-size: 1.02rem;
+      line-height: 1.95;
+      color: #0e0701;
+    }
+
+    .note-box p:last-of-type {
+      margin-bottom: 18px;
+    }
+
+    .note-source {
+      text-align: right;
+      font-size: 0.98rem;
+      letter-spacing: 0.02em;
+    }
+
+    .note-source a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .note-source a:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1040px;
+      margin: auto;
+      padding: 0 28px;
+      padding-top: px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 88px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 0;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .brand:hover img {
+      opacity: 0.8;
+    }
+
+    .hero {
+      padding: 40px 10px 30px;
+    }
+
+    .eyebrow {
+      font-size: .83rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: .06em;
+    }
+
+    h1 {
+      margin: 10px 0 8px;
+      font-size: clamp(2rem, 3vw, 2rem);
+      line-height: 1.25;
+      letter-spacing: -.035em;
+    }
+
+    .subtitle {
+      margin: 0 0 25px;
+      color: var(--ink);
+      font-size: 1.15rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.02rem;
+    }
+
+    .metadata {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 34px;
+      margin-top: 28px;
+      color: var(--ink);
+      font-size: .9rem;
+    }
+
+    .metadata strong { color: var(--ink); }
+
+    section { margin: 52px 0; }
+
+    h2 {
+      font-size: 1.45rem;
+      margin: 0 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .announcement {
+      background: var(--soft);
+      border-left: 3px solid var(--ink);
+      padding: 16px 20px;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .announcement p { margin: 0; }
+
+    .date {
+      display: block;
+      font-size: .8rem;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: .92rem;
+    }
+
+    th, td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+      color: var(--ink);
+      font-size: .83rem;
+      font-weight: 650;
+    }
+
+    tbody tr:hover { background: #fafbfd; }
+
+    .week {
+      white-space: nowrap;
+      color: var(--ink);
+    }
+
+    .topic { font-weight: 550; }
+
+    .material-link {
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    @media (max-width: 650px) {
+      .container { padding: 0 18px; }
+      .hero { padding: 45px 0 30px; }
+      .resources { grid-template-columns: 1fr; }
+      nav { align-items: flex-start; padding: 16px 0; }
+      .nav-links { gap: 10px 16px; }
+      th, td { padding: 12px 9px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="/" title="Auspiow Learn">
+          <img src="/assets/avatar.png" alt="Auspiow">
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Course Header -->
+    <div class="hero" id="about">
+      <h1>26秋冬「技能拾遗」辅学课程网站</h1>
+      <p class="subtitle">Practical Skills Tutorial by <a href="https://github.com/Auspiow" target="_blank">@Auspiow</a></p>
+
+      <div class="note-box">
+        <p>
+          大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，
+          而对于如何精通工具这一主题则往往会留给学生自行探索。在这个系列课程中，
+          我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等。
+          学生在他们受教育阶段就会和这些工具朝夕相处（在他们的职业生涯中更是这样）。
+        </p>
+
+        <p>
+          因此，花时间打磨使用这些工具的能力并能够最终熟练地、流畅地使用它们是非常有必要的。
+        </p>
+
+        <p>
+          精通这些工具不仅可以帮助您更快地使用工具完成任务，
+          并且可以帮助您解决在之前看来似乎无比复杂的问题。
+        </p>
+
+        <div class="note-source">
+          <a href="https://missingsemester.csail.mit.edu/" target="_blank" rel="noreferrer">
+            —— The Missing Semester of Your CS Education
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Announcements -->
+    <section id="announcements">
+      <h2>公告</h2>
+      <div class="announcement">
+        <span class="date">2026/10/20</span>
+        <p>
+          欢迎各位来到 2026 年秋冬学期计算机学院朋辈辅学「技能拾遗」课程，讲义与相关资源将随教学进度更新。
+        </p>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar">
+      <h2>日程</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Wk.</th>
+              <th>Date</th>
+              <th>Topic</th>
+              <th>Slides</th>
+              <th>Videos</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="week">1</td>
+              <td>10/24</td>
+              <td class="topic">Lec 0. 课程前瞻</td>
+              <td>
+                <a class="material-link" href="slides/lec0/">
+                  lec0
+                </a>
+              </td>
+              <td>—</td>
+            </tr>
+          
+            <tr>
+              <td class="week">2</td>
+              <td>—</td>
+              <td class="topic">Lec 1. 正确地在计院/AI院生存</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td class="week">3</td>
+              <td>—</td>
+              <td class="topic">Lec3. Git 与 Github</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td class="week">4</td>
+              <td>—</td>
+              <td class="topic">Lec4. Markdown 与文档写作</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+              <td class="week">TBD</td>
+              <td>—</td>
+              <td class="topic">TBD</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources">
+      <h2>相关资源</h2>
+      <p>
+        <a href="https://slides.tonycrane.cc/PracticalSkillsTutorial/" target="_blank" >2023 年朋辈辅学「技能拾遗」课程网站 </a>
+        <a href="https://tonycrane.cc/" target="_blank" >@TonyCrane</a>
+      </p>
+
+      <p>
+        <a href="https://inuebisu.github.io/SkillsTutorial/" target="_blank" >2025 年秋冬学期计算机学院朋辈辅学「技能拾遗」课程网站 </a>
+        <a href="https://inuebisu.cn/" target="_blank" >@犬戎</a>
+      </p>      
+    </section>
+  </main>
+
+</body>
+</html>
