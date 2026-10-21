@@ -14,19 +14,21 @@ revealOptions:
   width: 1000
 ---
 
-<div class="middle center">
+<div class="middle center cover">
 <div style="width: 100%">
 
-# 技能拾遗
+# Lec 0. 课程前瞻
 
 <hr/>
 
-Lec 0. 课程前瞻
+2026 年秋冬学期计算机学院朋辈辅学「技能拾遗」
 
-2026 年秋冬学期 · 浙江大学
+<div class="author">
+  <img src="./images/avatar.jpg" class="avatar">
+  <span>@Auspiow</span>
+</div>
 
-</div>
-</div>
+2026年10月24日
 
 <!--s-->
 
