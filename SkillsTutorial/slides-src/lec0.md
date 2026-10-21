@@ -4,7 +4,7 @@ separator: <!--s-->
 verticalSeparator: <!--v-->
 theme: simple
 highlightTheme: github
-css: custom.css
+css: SkillsTutorial/assets/css/slides.css
 
 revealOptions:
   transition: slide
