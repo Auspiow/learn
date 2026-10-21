@@ -20,7 +20,8 @@
 
 ## 构建与部署
 
-本项目使用 [reveal-md](https://github.com/webpro/reveal-md) 编写与构建幻灯片，并通过 GitHub Pages 发布静态网页。
+课程使用 [reveal-md](https://github.com/webpro/reveal-md) 编写与构建幻灯片。
+*特别感谢 [@TonyCrane](https://tonycrane.cc/) 开源的[模板](https://github.com/TonyCrane/slide-template)*
 
 1. Clone 仓库：
 
@@ -48,3 +49,7 @@
 - 使用方向键切换幻灯片。
 - 按 `Esc` 键进入幻灯片总览。
 - 按 `?` 键查看快捷键。
+
+## License
+
+This project is licensed under the MIT License.
