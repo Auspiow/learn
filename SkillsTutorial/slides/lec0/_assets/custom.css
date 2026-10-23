@@ -1,5 +1,4 @@
-@import url("./SkillsTutorial/assets/fonts/google-fonts.css");
-@import url("./SkillsTutorial/assets/fonts/lxgw/lxgwwenkaiscreen.css");
+@import url("./SkillsTutorial/assets/css/slides.css");
 
 :root {
   --r-main-font: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
