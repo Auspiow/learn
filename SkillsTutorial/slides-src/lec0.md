@@ -35,25 +35,185 @@ revealOptions:
 <div class="middle center">
 <div style="width: 100%">
 
-# Part.1 课程介绍
-
-为什么要学习实用技能？
-
-</div>
-</div>
+# Part.1 课程背景
 
 <!--v-->
 
-## 为什么需要这门课程？
+## 「技能拾遗」课程的历史
 
-- TBD
+* 最早由21级图灵王鹤翔学长[@TonyCrane](https://tonycrane.cc/)开设
+* 先后在计算机学院和竺可桢学院作为辅学课程
+* [@TonyCrane](https://tonycrane.cc/)，[@bowling233](https://github.com/bowling233)，[@45gfg9](https://45gfg9.net/)，[@Xecades](https://xecades.xyz/)，[@V1CeVersa](https://www.v1ceversaa.cc/)，[@犬戎](https://inuebisu.cn/)等学长前赴后继
+    * 以上诸位一个赛一个神仙
+* 极高质量的辅学精品课程
+    * [课程仓库](https://github.com/TonyCrane/PracticalSkillsTutorial)在 GitHub 上取得了 400+ stars
+    * 在过去的两年四学期中帮助了无数同学
+
+<!--v-->
+
+## 为什么会有这门课
+
+> 大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，而对于如何精通工具这一主题则往往会留给学生自行探索。在这个系列课程中，我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等。学生在他们受教育阶段就会和这些工具朝夕相处（在他们的职业生涯中更是这样）。
+> 
+> 因此，花时间打磨使用这些工具的能力并能够最终熟练地、流畅地使用它们是非常有必要的。
+>
+> 精通这些工具不仅可以帮助您更快的使用工具完成任务，并且可以帮助您解决在之前看来似乎无比复杂的问题。
+>
+> —— [MIT《计算机教育中缺失的一课》](https://missing-semester-cn.github.io/)
+
+<!--v-->
+
+## 这门课能带给你什么(before ai)
+
+* 掌握一系列常用的工具（包括 Git、Shell、Markdown 等，也许还有AI🤔）
+* 增强 CS 专业技能，让你看起来[更专业、更像一个 CS 人](https://www.cc98.org/topic/5370849)
+* 树立起一个 CS 人的思维方式：
+  * 学会自己解决问题、自己 debug
+  * 学会探索计算机世界、广泛自学的方法
+  * 构建一个属于自己、干净、高效的工作环境和工作流程
+* 为将来更多计算机课程的学习打下坚实基础、打通道路
+* ...
+
+<!--v-->
+
+## 这门课能带给你什么(ai)
+
+但是，ai大人来了，时代变了🤯
+* 传统的解决问题三部曲：
+  * STFW (**S**earch **T**he **F**ucking **W**eb)
+  * RTFM (**R**ead **T**he **F**ucking **M**anual)
+  * RTFSC (**R**ead **T**he **F**ucking **S**ource **C**ode)
+* 但现在我们的第一件事已经变成了：
+  * ATFAI (**A**sk **T**he **F**ucking **A**rtificial **I**ntelligence)
 
 <!--s-->
 
 <div class="middle center">
 <div style="width: 100%">
 
-# TBD
+# Part.2 课程安排
 
+<!--v-->
+
+## 自我介绍
+
+* Auspiow，这是我常用的网名（不常用的是4u5p10w）
+  * 24级工业设计（人生自古谁无死，很遗憾，“工业设计”专业已经消失在了历史的长河中，让我们永远缅怀它💀）
+  * 三无学生（抱歉）
+  * Github [@Auspiow](https://github.com/Auspiow)
+
+<!--v-->
+
+## 内容与时间安排
+
+| 课程 | 时间 |
+|---|---|
+| Lec 0. 课程前瞻 | 10/24 |
+| Lec 1. Git 与 GitHub | 10/31 |
+| Lec 2. Linux 及其工作流 | 11/7 |
+| Lec 3. Markdown 与文档写作 | 11/28 |
+| Lec 4. AI ?! | 12/5 |
+
+* 这一页的信息可能有调整，会在钉钉群同步通知
+* 之后我们每 **「周六 10:00 - 11:30」** 在 **「东1A-209」**不见不散（期中周除外）
+
+<!--v-->
+
+## 课程资源
+
+课程主页：https://learn.auspiow.top/SkillsTutorial/
+
+课程仓库：https://github.com/Auspiow/learn/tree/main/SkillsTutorial
+
+课程回放：钉钉群有直播回放，同时我也会上传至B站[@Auspiow](https://space.bilibili.com/3546703439333795)
+
+<!--s-->
+
+<div class="middle center">
+<div style="width: 100%">
+
+# Part.3 在开始之前
+
+<!--v-->
+
+## 如果你要自学这门课
+
+> CSer 最重要的能力之一就是自学能力
+
+实际上，我非常赞同这样的学习方式，你可以自由分配时间，选择那些感兴趣的资料进行深入的研读
+
+* [MIT《计算机教育中缺失的一课》](https://missing-semester-cn.github.io/)
+* [23 朋辈辅学「技能拾遗」课程网站](https://slides.tonycrane.cc/PracticalSkillsTutorial/)
+* [24 秋冬程序设计辅学-浙江大学竺可桢学院辅学计划站点](https://ckc-agc.bowling233.top/programming/24fall/)
+* [25 秋冬学期计算机学院朋辈辅学「技能拾遗」](https://inuebisu.github.io/SkillsTutorial/)
+
+如果你要自学其他CS课程 ➡ [CS自学指南](https://csdiy.wiki/)
+
+<!--v-->
+## 搜索 STFW
+
+用什么：~~百度~~ Google Bing Wiki(Wikipedia)
+
+奇技淫巧
+* [Google高级搜索](https://www.google.com/advanced_search)，[Google Hacking/Dorking](https://support.google.com/websearch/answer/2466433)
+* [@犬戎老师讲的](https://inuebisu.github.io/SkillsTutorial/lec1.html#/3/6)
+
+[搜索结果质量](https://inuebisu.github.io/SkillsTutorial/lec1.html#/3/7)
+
+<!--v-->
+## Man! RTFM
+全称是 Manual
+
+常指 Linux 下的命令 man
+
+当然也可以指：
+* 官方文档
+* 语言规范
+* 学术论文
+* 请求意见稿 ([RFCs](https://www.ietf.org/process/rfcs/))
+* ~~牢大~~
+<div style="height: 1em;"></div>
+### TL;DR
+
+[tldr](https://tldr.sh/)看起来是更加友好的
+
+<!--v-->
+## 提问的智慧
+
+提问是低效的，但却是必要的
+
+https://github.com/tvvocold/How-To-Ask-Questions-The-Smart-Way
+
+避免 [X-Y Problem](https://xyproblem.info/)
+<!--v-->
+
+## 准备好类 Unix 环境
+
+如果你用的是 Linux：
+* 恭喜你，你已经有了
+
+如果你用的是 Mac：
+* 恭喜你，你已经有了
+
+如果你用的是 Windows：
+* 请安装一个 WSL：https://learn.microsoft.com/zh-cn/windows/wsl/
+* 或者自己动手安装 Windows & Linux 双系统
+
+<!--s-->
+
+<div class="middle center cover">
+<div style="width: 100%">
+
+# 谢谢大家
+*同时，祝大家1024程序员节快乐！*
+
+<hr/>
+
+Questions?
+
+<div class="author">
+  <img src="./images/avatar.jpg" class="avatar">
+  <span>@Auspiow</span>
 </div>
-</div>
+
+2026年10月24日

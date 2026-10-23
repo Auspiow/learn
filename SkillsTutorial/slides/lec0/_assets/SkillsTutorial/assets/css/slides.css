@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;700;800&family=Source+Code+Pro&family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700);
 @import url(https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css);
 
@@ -5,6 +6,7 @@
   --r-main-font: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
   --r-heading-font: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
   --r-code-font: "JetBrains Mono", "LXGW WenKai Screen", sans-serif;
+  --r-main-font-size: 26px;
 }
 
 .reveal .slide-number {
@@ -24,15 +26,25 @@
   padding: 20px 0;
 }
 
-.reveal p, .reveal li, .reveal center {
-  font-size: 30px;
+.reveal p,
+.reveal li,
+.reveal center {
+  font-size: 26px;
 }
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
   font-weight: 700;
 }
 
-.reveal p, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+.reveal p,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
   padding: 0 25px 0 25px;
 }
 
@@ -53,7 +65,7 @@
 }
 
 .reveal ul {
-  margin: 0 0 0 1.5em;
+  margin: 0 0 0 2.5em;
 }
 
 .reveal ol {
@@ -153,6 +165,8 @@ section .center {
   max-height: none;
 }
 
+/* 分隔线 */
+
 .reveal hr {
   border: 10px solid white;
 }
@@ -168,11 +182,54 @@ section .center {
   margin-bottom: 40px;
 }
 
+/* 表格基础样式 */
+
 .reveal table {
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-collapse: collapse;
 }
+
+/* 普通 Markdown 表格：仅保留横线 */
+
+.reveal section > table {
+  width: 65%;
+  margin: 15px auto;
+  border: none;
+  border-collapse: collapse;
+  text-align: left;
+  page-break-inside: avoid;
+}
+
+/* 取消所有单元格边框 */
+
+.reveal section > table th,
+.reveal section > table td {
+  border: none;
+  padding: 8px 15px;
+  text-align: left;
+}
+
+/* 表头下方横线 */
+
+.reveal section > table > thead > tr > th {
+  border-bottom: 1px solid #666;
+}
+
+/* 表格每一行下方横线 */
+
+.reveal section > table > tbody > tr > td {
+  border-bottom: 1px solid #aaa;
+}
+
+/* 最后一行不显示横线 */
+
+.reveal section > table > tbody > tr:last-child > td {
+  border-bottom: none;
+}
+
+/* 三线表 */
 
 .three-line {
   text-align: center;
@@ -205,30 +262,7 @@ section .center {
   border: none;
 }
 
-section > table {
-  border: 1.5pt solid;
-  text-align: center;
-  page-break-inside: avoid;
-}
-
-section > table > tbody > tr > td {
-  border: 0.75pt solid;
-  padding: 7px;
-}
-
-section > table > tbody > tr {
-  border: 0.75pt solid;
-  padding: 7px;
-}
-
-section > table > thead {
-  border: 0.75pt solid;
-  font-size: 0.9em;
-}
-
-section > table th {
-  border: 0.75px solid;
-}
+/* 多列布局 */
 
 .reveal .mul-cols {
   display: flex;
@@ -238,9 +272,13 @@ section > table th {
   width: 100%;
 }
 
+/* PDF 导出 */
+
 html.print-pdf .reveal pre code {
   font-family: var(--r-code-font) !important;
 }
+
+/* 中文排版 */
 
 .reveal heti-spacing {
   display: inline;
@@ -276,10 +314,14 @@ html.print-pdf .reveal pre code {
   margin-inline-start: -0.25em;
 }
 
+/* 页码 */
+
 .reveal .slide-number {
   left: 8px;
   right: unset;
 }
+
+/* 数学公式 */
 
 .MathJax .math {
   font-size: 80%;
@@ -288,6 +330,8 @@ html.print-pdf .reveal pre code {
 .katex {
   font-size: 1em;
 }
+
+/* Reveal.js Scroll 模式 */
 
 .reveal-viewport.reveal-scroll .slide-background {
   width: var(--slide-width) !important;
@@ -315,4 +359,9 @@ html.print-pdf .reveal pre code {
   top: unset !important;
   left: unset !important;
   transform: none !important;
+}
+
+/* 首页和结束页整体下移 */
+.reveal .middle.cover {
+  transform: translateY(80px);
 }
